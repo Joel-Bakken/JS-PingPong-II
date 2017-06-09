@@ -32,6 +32,7 @@ Written on a Dell OMEN laptop using Atom and Sublime Text. I used HTML, CSS, Jav
 
 Copyright (c) 2017 **Joel Bakken**
 
+## Specs for program:
 
 Behavior																	Input	Output		Result
 
