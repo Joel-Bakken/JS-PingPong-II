@@ -1,23 +1,28 @@
+
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-      var endNumber = parseInt($("#endNumber").val());
-        function pingpong() {
+
+
+ function pingpong() {
+    var results = [startNumber, endNumber];
+    var endNumber = parseInt($("#endNumber").val());
+    debugger;
+    alert(endNumber);
           for (var startNumber = 1; startNumber <= endNumber; startNumber++) {
             if (startNumber % 5 === 0 && startNumber % 3 === 0) {
-              print('pingpong');
+              $("#results").push('pingpong');
             } else if (startNumber % 3 === 0) {
-              print('ping');
+              $("#results").push('ping');
             } else if (startNumber % 5 === 0) {
-              print('pong');
+              $("#results").push('pong');
             } else {
-              print(resuts);
+              $("#results").push();
+              alert("#results");
             }
           }
+          $("#btn").click(pingpong).text();
         }
-      var results = document.getElementById('results');
-      function print(r) {
-        r.innerHTML += s + '<br>';
-      }
-    });
+
+  });
 });
