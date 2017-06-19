@@ -7,9 +7,9 @@ $(document).ready(function() {
  function pingpong() {
     var results = [startNumber, endNumber];
     var endNumber = parseInt($("#endNumber").val());
-    debugger;
-    alert(endNumber);
+
           for (var startNumber = 1; startNumber <= endNumber; startNumber++) {
+            alert(startNumber)
             if (startNumber % 5 === 0 && startNumber % 3 === 0) {
               $("#results").push('pingpong');
             } else if (startNumber % 3 === 0) {
