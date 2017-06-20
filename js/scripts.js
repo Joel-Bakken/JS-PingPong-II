@@ -1,29 +1,32 @@
+//Business Logic
 
-$(document).ready(function() {
-  $("#formOne").submit(function(event) {
-    event.preventDefault();
-
-
- function pingpong() {
-    var results = [startNumber, endNumber];
-    var endNumber = parseInt($("#endNumber").val());
+function pingpong(endNumber) {
+    
 
       for (var startNumber = 1; startNumber <= endNumber; startNumber++) {
         if (startNumber % 5 === 0 && startNumber % 3 === 0) {
-          $("#results").push('pingpong');
+          $("#results").append(' ping-pong, ');
         } else if (startNumber % 3 === 0) {
-          $("#results").push('ping');
+          $("#results").append(' ping, ');
         } else if (startNumber % 5 === 0) {
-          $("#results").push('pong');
+          $("#results").append(' pong, ');
         } else {
-          $("#results").push(results);
-        }
-      }
-      $("#btn").click(pingpong); {
-         $("#result").text(result);
-      }
+          $("#results").append(" " + startNumber + ", ");
+        };
+      };
+};
 
-    }
 
+
+
+//User Logic
+$(document).ready(function() {
+  $("#formOne").submit(function(event) {
+    var userNumber = parseInt($("#endNumber").val());
+    pingpong(userNumber);
+    event.preventDefault();
   });
 });
+
+ 
+
