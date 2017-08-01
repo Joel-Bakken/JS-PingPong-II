@@ -68,6 +68,7 @@ gulp.task('bowerCSS', function () {
 
 gulp.task('bower', ['bowerJS', 'bowerCSS']);
 
+//Start of Serve task
 gulp.task('serve', function() {
   browserSync.init({
     server: {
@@ -78,14 +79,18 @@ gulp.task('serve', function() {
 
   gulp.watch(['js/*.js'], ['jsBuild']);
   gulp.watch(['bower.json'], ['bowerBuild']);
-
-});
+  gulp.watch(['*.html'], ['htmlBuild']);
+}); //End of serve task
 
 gulp.task('bowerBuild', ['bower'], function(){
   browserSync.reload();
 });
 
 gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function(){
+  browserSync.reload();
+});
+
+gulp.task('htmlBuild', function() {
   browserSync.reload();
 });
 
