@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Littlejoel29/JS-PingPong-II#readme",
   "devDependencies": {
+    "bower-files": "^4.0.0",
     "browserify": "^14.4.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",

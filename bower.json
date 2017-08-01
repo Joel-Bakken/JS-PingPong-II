@@ -1,0 +1,19 @@
+{
+  "name": "ping-pong",
+  "description": "#### Replaces certain numbers within a range determined by you with ping or pong [ver 1.0 8-1-17]",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/Littlejoel29/JS-PingPong-II.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1"
+  }
+}
