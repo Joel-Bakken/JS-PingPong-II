@@ -1,4 +1,4 @@
-var apiKey = "c7aeca75879e7fdbf95e5e618c83aef2";
+var apiKey = require('./../.env').apiKey;
 
 $(document).ready(function() {
   $('#weather-location').click(function() {
