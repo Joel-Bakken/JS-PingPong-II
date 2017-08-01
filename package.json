@@ -1,0 +1,24 @@
+{
+  "name": "ping-pong",
+  "version": "1.0.0",
+  "description": "#### Replaces certain numbers within a range determined by you with ping or pong [ver 1.0 8-1-17]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Littlejoel29/JS-PingPong-II.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Littlejoel29/JS-PingPong-II/issues"
+  },
+  "homepage": "https://github.com/Littlejoel29/JS-PingPong-II#readme",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
