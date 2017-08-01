@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.2.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Ping-Pong</title>
-</head>
-
-<body>
-  <img src="img/paddles.jpg" alt="Ping-Pong Paddles">
-  <div class="jumbotron">
-    <h1>Ping-Pong</h1>
-  </div>
-  <div id="formgroup">
-    <form id="formOne">
-      <div>
-        <input id="endNumber" type="number" class="form-control">
-      </div>
-      <button type="submit" class="btn">Submit</button>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/pingpong.js"></script>
+    <script type="text/javascript" src="js/pingpong-interface.js"></script>
+    <title>Ping Pong</title>
+  </head>
+  <body>
+    <form id="ping-pong-form">
+      <label for="goal">Enter a number:</label>
+      <input id="goal" type="number">
+      <button type="submit">Submit</button>
     </form>
-    <p id="results">
-
-    </p>
-  </div>
-</body>
-
+    <ul id="solution"></ul>
+  </body>
 </html>
